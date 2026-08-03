@@ -13,9 +13,8 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
   <img src="https://img.shields.io/npm/l/vkeyboardhand" alt="License MIT">
   <img src="https://img.shields.io/badge/pure_JS-zero_dependency-4fc08d" alt="pure JS zero dependency">
 </p>
-<div align="center">
+
 [English](README.md) | [简体中文](README_zh.md)
-</div>
 
 <p align="center">
   <img src="./assets/vkeyboardhand.jpg" alt="vkeyboardhand"  />
