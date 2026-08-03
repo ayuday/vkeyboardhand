@@ -13,9 +13,8 @@
   <img src="https://img.shields.io/npm/l/vkeyboardhand" alt="License MIT">
   <img src="https://img.shields.io/badge/纯JS-零依赖-4fc08d" alt="pure JS zero dependency">
 </p>
-<div align="center">
+
 [English](README.md) | [简体中文](README_zh.md)
-</div>
 
 <p align="center">
   <img src="./assets/vkeyboardhand.jpg" alt="vkeyboardhand"  />
