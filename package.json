@@ -1,0 +1,66 @@
+{
+  "name": "vkeyboardhand",
+  "version": "1.0.0",
+  "description": "交互式指法教学组件：SVG 键盘图 + SVG 手势图 + JavaScript 事件驱动联动，兼容 Vue/React/Angular，支持本地引入、CDN、npm。",
+  "keywords": [
+    "keyboard",
+    "svg",
+    "touch-typing",
+    "typing",
+    "finger",
+    "fingering",
+    "teaching",
+    "virtual-keyboard",
+    "vkeyboard",
+    "vue",
+    "react",
+    "angular"
+  ],
+  "license": "MIT",
+  "author": "ayumi",
+  "homepage": "https://github.com/ayuday/vkeyboardhand#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayuday/vkeyboardhand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayuday/vkeyboardhand/issues"
+  },
+  "main": "dist/vkeyboardhand.umd.js",
+  "module": "dist/vkeyboardhand.esm.mjs",
+  "unpkg": "dist/vkeyboardhand.umd.js",
+  "jsdelivr": "dist/vkeyboardhand.umd.js",
+  "style": "dist/vkeyboardhand.css",
+  "files": [
+    "dist",
+    "src",
+    "svg/keyboard.svg",
+    "svg/hand.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vkeyboardhand.esm.mjs",
+      "require": "./dist/vkeyboardhand.umd.js",
+      "default": "./dist/vkeyboardhand.umd.js"
+    },
+    "./dist/vkeyboardhand.css": "./dist/vkeyboardhand.css",
+    "./vkeyboardhand.css": "./dist/vkeyboardhand.css",
+    "./svg/keyboard.svg": "./svg/keyboard.svg",
+    "./svg/hand.svg": "./svg/hand.svg",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npx serve .",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {}
+}

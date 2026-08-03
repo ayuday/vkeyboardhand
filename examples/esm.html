@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>vkeyboardhand × ESM</title>
+  <link rel="stylesheet" href="../dist/vkeyboardhand.css">
+  <style>
+    body { font-family: "Helvetica Neue", Arial, "PingFang SC", sans-serif; padding: 40px 16px; background: #f6f8fc; }
+    .wrap { max-width: 780px; margin: 0 auto; }
+    h2 { text-align: center; }
+    #app { background: #fff; border: 1px solid #e5e9f2; border-radius: 16px; padding: 32px 24px 40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>ES Module 方式使用 vkeyboardhand（npm 安装后同款写法）</h2>
+    <div id="app"></div>
+  </div>
+
+  <script type="module">
+    import VKeyboardHand from '../dist/vkeyboardhand.esm.mjs';
+
+    const kb = VKeyboardHand.create('#app', {
+      keyboard: '../svg/keyboard.svg',
+      hand: '../svg/hand.svg',
+      theme: 'dark'
+    });
+
+    window.kb = kb;
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>vkeyboardhand × React</title>
+  <link rel="stylesheet" href="../dist/vkeyboardhand.css">
+  <style>
+    body { font-family: "Helvetica Neue", Arial, "PingFang SC", sans-serif; padding: 40px 16px; background: #f6f8fc; }
+    .wrap { max-width: 780px; margin: 0 auto; }
+    h2 { text-align: center; }
+    #root > div { background: #fff; border: 1px solid #e5e9f2; border-radius: 16px; padding: 32px 24px 40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>React 中使用 vkeyboardhand</h2>
+    <div id="root"></div>
+  </div>
+
+  <!-- 框架：React 18 CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- 组件：本地 dist（发布后可直接换 CDN 链接） -->
+  <script src="../dist/vkeyboardhand.umd.js"></script>
+
+  <script type="text/babel">
+    const App = () => {
+      const hostRef = React.useRef(null);
+      const kbRef = React.useRef(null);
+
+      React.useEffect(() => {
+        kbRef.current = VKeyboardHand.create(hostRef.current, {
+          keyboard: '../svg/keyboard.svg',
+          hand: '../svg/hand.svg',
+          theme: 'bone'
+        });
+        return () => {
+          if (kbRef.current) kbRef.current.destroy();
+        };
+      }, []);
+
+      return <div ref={hostRef} />;
+    };
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

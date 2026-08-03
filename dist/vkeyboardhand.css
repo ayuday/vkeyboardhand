@@ -1,0 +1,289 @@
+/* ==========================================================================
+   vkeyboardhand.css
+   交互式指法教学组件样式：SVG 键盘图 + SVG 手势图联动
+   ========================================================================== */
+
+.vk-hand {
+  --vk-accent: #79bbff;
+  --vk-finger-lp: #ff9f43;
+  --vk-finger-lr: #f368e0;
+  --vk-finger-lm: #17c0eb;
+  --vk-finger-li: #1dd1a1;
+  --vk-finger-ri: #0abde3;
+  --vk-finger-rm: #a29bfe;
+  --vk-finger-rr: #fd79a8;
+  --vk-finger-rp: #fdcb6e;
+  --vk-finger-th: #6c5ce7;
+
+  position: relative;
+  width: 100%;
+  max-width: 685px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.vk-hand * {
+  box-sizing: border-box;
+}
+
+/* ------------------------- 键盘图 ------------------------- */
+
+.vk-keyboard > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  direction: ltr;
+  background: none;
+  overflow: visible;
+}
+
+/* 基础样式（SVG 内嵌类，无页面 CSS 时也能正常显示） */
+.vk-keyboard > svg.standard-kb .st0 {
+  fill: none;
+  stroke: #777;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+.vk-keyboard > svg.standard-kb .st1 {
+  opacity: 0;
+  font-family: ArialMT, Arial, Helvetica, "sans-serif";
+  font-size: 15px;
+}
+
+.vk-keyboard > svg.standard-kb .st2 {
+  opacity: 1;
+  fill: #777;
+}
+
+.vk-keyboard > svg.standard-kb .b { font-size: 26px; }
+.vk-keyboard > svg.standard-kb .b2 { font-size: 24px; }
+.vk-keyboard > svg.standard-kb .s { font-size: 12px; }
+
+.vk-keyboard > svg.standard-kb text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vk-hand .vk-keyboard > svg.standard-kb text.active {
+  fill: #fff;
+}
+
+/* 键位交互 */
+.vk-keyboard > svg.standard-kb path.vk-clickable {
+  cursor: pointer;
+  transition: fill 0.18s ease, stroke 0.18s ease, filter 0.18s ease;
+}
+
+.vk-keyboard > svg.standard-kb path.vk-clickable:hover {
+  stroke-width: 2px;
+  filter: brightness(1.05);
+}
+
+/* 手指配色（showFingerColors 开启时按指法上色） */
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="lp"] { fill: var(--vk-finger-lp); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="lr"] { fill: var(--vk-finger-lr); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="lm"] { fill: var(--vk-finger-lm); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="li"] { fill: var(--vk-finger-li); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="ri"] { fill: var(--vk-finger-ri); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="rm"] { fill: var(--vk-finger-rm); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="rr"] { fill: var(--vk-finger-rr); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="rp"] { fill: var(--vk-finger-rp); }
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger="th"] { fill: var(--vk-finger-th); }
+
+/* ------------------------- 手势图层 ------------------------- */
+
+.vk-hand-layer {
+  position: absolute;
+  pointer-events: none;
+  height: 363px;
+  top: -10px;
+  left: 0;
+  opacity: 0.8;
+  transform: translate(55px) scale(1.55);
+}
+
+.vk-hand-layer > svg {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.vk-hand-layer g {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.vk-hand-layer g.vk-show {
+  opacity: 1;
+}
+
+/* ------------------------- 指法提示条 ------------------------- */
+
+.vk-finger-label {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translate(-50%, 100%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(20, 24, 33, 0.82);
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.vk-finger-label.vk-visible {
+  opacity: 1;
+  transform: translate(-50%, 100%) translateY(-4px);
+}
+
+.vk-finger-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--vk-accent);
+  flex: none;
+}
+
+/* ------------------------- 主题 ------------------------- */
+
+/* 骨白主题（默认）：与 keyboard+hand.html 中 standard-kb 的实际渲染一致 */
+.vk-theme-bone .vk-keyboard > svg.standard-kb .st0 {
+  fill: none;
+  stroke: #777;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+.vk-theme-bone .vk-keyboard > svg.standard-kb .b {
+  font-size: 26px;
+}
+
+.vk-theme-bone .vk-keyboard > svg.standard-kb .b2 {
+  font-size: 24px;
+}
+
+.vk-theme-bone .vk-keyboard > svg.standard-kb .s {
+  font-size: 12px;
+}
+
+/* 暗色主题 */
+.vk-theme-dark {
+  --vk-accent: #6aa9ff;
+}
+
+.vk-theme-dark .vk-keyboard > svg.standard-kb .st0 {
+  fill: #272822;
+  stroke: #858585;
+}
+
+.vk-theme-dark .vk-keyboard > svg.standard-kb .st2 {
+  fill: #d7ff12;
+}
+
+.vk-theme-dark .vk-keyboard > svg.standard-kb text.active {
+  fill: #272822;
+}
+
+/* 机器人 / 帝王鱼 / 奶色主题（配合 hand.svg 内嵌 theme-* 样式） */
+.vk-theme-robot .vk-keyboard > svg.standard-kb .st0 {
+  fill: #b1b7ce;
+  stroke: #1f2430;
+}
+
+.vk-theme-kingfish .vk-keyboard > svg.standard-kb .st0 {
+  fill: #b5bac3;
+  stroke: #00060c;
+}
+
+.vk-theme-milk .vk-keyboard > svg.standard-kb .st0 {
+  fill: #f9f8f4;
+  stroke: #4a4949;
+}
+
+/* 彩虹主题（默认）：配色约定见 colorful.md —— 按键按手指区域着色，左冷右暖形成彩虹 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb .st0 {
+  fill: #fafbfc;      /* .key 默认浅灰白 */
+  stroke: #bfc8d4;    /* .key 边框色 */
+  stroke-width: 1;
+}
+
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb .st2 {
+  fill: #26303c;      /* --ink 深墨色 */
+}
+
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb text.active {
+  fill: #fff;         /* .key-pressed 白字 */
+}
+
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="lp"] { fill: #fff0f6; stroke: #d6a0b9; } /* 左小指 粉 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="lr"] { fill: #f7efff; stroke: #c6a4df; } /* 左无名指 紫 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="lm"] { fill: #eef4ff; stroke: #9fb4e3; } /* 左中指 蓝紫 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="li"] { fill: #eaf9f8; stroke: #83bec2; } /* 左食指 青 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="ri"] { fill: #eef9f1; stroke: #8ac29c; } /* 右食指 绿 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="rm"] { fill: #fffbe8; stroke: #c2bb76; } /* 右中指 黄绿 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="rr"] { fill: #fff4e8; stroke: #d9aa71; } /* 右无名指 橙 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="rp"] { fill: #fff0ef; stroke: #d69a98; } /* 右小指 红 */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger="th"] { fill: #f2f4f7; stroke: #9fa8b5; } /* 拇指 灰蓝 */
+
+/* 按下：.key-pressed 深灰蓝实底 + 白字（覆盖彩虹色，优先级最高） */
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path.active,
+.vk-hand.vk-theme-colorful .vk-keyboard > svg.standard-kb path[data-finger].active {
+  fill: #303a4a;
+  stroke: #303a4a;
+}
+
+/* 按下高亮 / 手指配色激活态（置于主题之后，保证高于主题 .st0 的特异性） */
+.vk-hand .vk-keyboard > svg.standard-kb path.active {
+  fill: var(--vk-accent);
+  stroke: #2f6fb3;
+  stroke-width: 1.5;
+}
+
+.vk-hand .vk-keyboard > svg.standard-kb path[data-finger].active {
+  fill: var(--vk-accent);
+  stroke: #1d4f91;
+}
+
+/* ------------------------- 响应式 ------------------------- */
+
+@media screen and (max-width: 479px) {
+  .vk-hand {
+    max-width: 360px;
+  }
+
+  .vk-hand-layer {
+    height: 195px;
+    top: 0;
+    left: -31px;
+    transform: translate(55px) scale(1.55);
+  }
+
+  .vk-finger-label {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
+
+/* ------------------------- 可访问性 ------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .vk-hand-layer g,
+  .vk-finger-label,
+  .vk-keyboard > svg.standard-kb path.vk-clickable {
+    transition: none;
+  }
+}

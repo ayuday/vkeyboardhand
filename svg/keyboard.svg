@@ -1,0 +1,170 @@
+<svg viewBox="0 0 683.3 254" xmlns="http://www.w3.org/2000/svg" class="standard-kb">
+      <g id="letters-background">
+        <path id="letter-bg-tilda" d="M58.4,53.7c0,1.7-1.4,3-3,3H18.9c-1.6,0-3-1.3-3-3V18.3c0-1.7,1.3-3,3-3h36.5c1.6,0,3,1.3,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-1" d="M103.4,53.7c0,1.7-1.3,3-3,3H63.9c-1.7,0-3-1.3-3-3V18.3c0-1.6,1.3-3,3-3h36.5c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-q" d="M126.7,97.6c0,1.6-1.3,3-3,3H87.2c-1.7,0-3-1.4-3-3V62.3c0-1.6,1.3-3,3-3h36.5c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-a" d="M137.4,141.5c0,1.6-1.4,3-3,3H97.9c-1.7,0-3-1.4-3-3v-35.4c0-1.7,1.3-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0 focus-row b"></path>
+        <path id="letter-bg-z" d="M160.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3v-35.3c0-1.7,1.3-3,3-3h36.5c1.6,0,3,1.3,3,3V185.4z" class="st0 focus-row b"></path>
+        <path id="letter-bg-x" d="M205.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3v-35.3c0-1.6,1.3-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0 focus-row b"></path>
+        <path id="letter-bg-c" d="M250.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3v-35.3c0-1.6,1.3-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-v" d="M295.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3v-35.3c0-1.6,1.3-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-b" d="M340.8,185.4c0,1.7-1.4,3-3,3h-36.6c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.6c1.6,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-n" d="M385.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0 focus-row b"></path>
+        <path id="letter-bg-m" d="M430.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-comma" d="M475.8,185.4c0,1.7-1.4,3-3,3h-36.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V185.4z" class="st0 focus-row b"></path>
+        <path id="letter-bg-dot" d="M520.8,185.4c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-slash" d="M565.8,185.4c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-s" d="M182.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-d" d="M227.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-f" d="M272.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-g" d="M317.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0 focus-row b"></path>
+        <path id="letter-bg-h" d="M362.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-j" d="M407.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0 focus-row b"></path>
+        <path id="letter-bg-k" d="M452.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-l" d="M497.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0 focus-row b"></path>
+        <path id="letter-bg-semicolon" d="M542.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-quote" d="M587.4,141.5c0,1.6-1.4,3-3,3h-36.5c-1.7,0-3-1.4-3-3v-35.4c0-1.7,1.3-3,3-3h36.5c1.6,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-w" d="M171.7,97.6c0,1.6-1.3,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-e" d="M216.7,97.6c0,1.6-1.3,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.7,1.4-3,3-3h36.5c1.7,0,3,1.3,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-r" d="M261.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-t" d="M306.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-y" d="M351.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0 active focus-row b"></path>
+        <path id="letter-bg-u" d="M396.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0 focus-row b"></path>
+        <path id="letter-bg-i" d="M441.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0 focus-row b"></path>
+        <path id="letter-bg-o" d="M486.7,97.6c0,1.6-1.4,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-p" d="M531.7,97.6c0,1.6-1.3,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-left-center-bracket" d="M576.7,97.6c0,1.6-1.3,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-right-center-bracket" d="M621.7,97.6c0,1.6-1.3,3-3,3h-36.5c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-backslash" d="M668.8,97.6c0,1.6-1.3,3-3,3h-38.6c-1.6,0-3-1.4-3-3V62.4c0-1.6,1.4-3,3-3h38.6c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-2" d="M148.4,53.7c0,1.7-1.4,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.6,1.4-3,3-3h36.5c1.6,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-3" d="M193.4,53.7c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3V18.3c0-1.6,1.3-3,3-3h36.5c1.6,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-4" d="M238.4,53.7c0,1.7-1.4,3-3,3H199c-1.7,0-3-1.3-3-3V18.3c0-1.7,1.3-3,3-3h36.5c1.6,0,3,1.3,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-5" d="M283.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.7,0-3-1.3-3-3V18.3c0-1.7,1.3-3,3-3h36.5c1.7,0,3,1.3,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-6" d="M328.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.7,1.4-3,3-3h36.5c1.7,0,3,1.3,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-7" d="M373.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-8" d="M418.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-9" d="M463.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-0" d="M508.4,53.7c0,1.7-1.3,3-3,3h-36.5c-1.6,0-3-1.3-3-3V18.3c0-1.6,1.4-3,3-3h36.5c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-minus" d="M553.4,53.7c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3V18.3c0-1.7,1.4-3,3-3h36.5c1.6,0,3,1.3,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-equal" d="M598.4,53.7c0,1.7-1.4,3-3,3h-36.5c-1.7,0-3-1.3-3-3V18.3c0-1.6,1.3-3,3-3h36.5c1.6,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-backspace" d="M668.8,53.7c0,1.7-1.3,3-3,3h-61.9c-1.7,0-3-1.3-3-3V18.3c0-1.6,1.3-3,3-3h61.9c1.7,0,3,1.4,3,3V53.7z" class="st0"></path>
+        <path id="letter-bg-tab" d="M81.7,97.6c0,1.6-1.3,3-3,3H18.9c-1.6,0-3-1.4-3-3V62.3c0-1.6,1.3-3,3-3h59.8c1.7,0,3,1.4,3,3V97.6z" class="st0"></path>
+        <path id="letter-bg-capslock" d="M92.4,141.5c0,1.6-1.3,3-3,3H18.9c-1.6,0-3-1.4-3-3v-35.4c0-1.7,1.3-3,3-3h70.4c1.7,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-enter" d="M668.8,141.5c0,1.6-1.3,3-3,3h-72.9c-1.7,0-3-1.4-3-3v-35.4c0-1.7,1.3-3,3-3h72.9c1.7,0,3,1.3,3,3V141.5z" class="st0"></path>
+        <path id="letter-bg-shift-left" d="M115.8,185.4c0,1.7-1.3,3-3,3H18.9c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.3-3,3-3h93.8c1.7,0,3,1.4,3,3V185.4z" class="st0"></path>
+        <path id="letter-bg-control" d="M105,236c0,1.6-1.3,3-3,3H18.9c-1.6,0-3-1.4-3-3v-42c0-1.7,1.3-3,3-3H102c1.7,0,3,1.3,3,3V236z" class="st0 hide-on-bone"></path>
+        <path id="letter-bg-alt-left" d="M182.4,236c0,1.7-1.4,3-3,3h-68.8c-1.7,0-3-1.3-3-3v-42c0-1.7,1.3-3,3-3h68.8c1.6,0,3,1.3,3,3V236z" class="st0 hide-on-bone"></path>
+        <path id="letter-bg-alt-right" d="M531.8,191c1.7,0,3,1.4,3,3v42c0,1.7-1.3,3-3,3h-62.9c-1.6,0-3-1.3-3-3v-42c0-1.6,1.4-3,3-3H531.8z" class="st0 hide-on-bone"></path>
+        <path d="M668.8,236.1c0,1.7-1.3,3-3,3H540.3c-1.6,0-3-1.3-3-3v-42c0-1.6,1.4-3,3-3h125.5c1.7,0,3,1.4,3,3V236.1z" class="st0 hide-on-bone"></path>
+        <path id="letter-bg-space" d="M460.4,191c1.6,0,3,1.4,3,3v42c0,1.7-1.4,3-3,3H187.5c-1.6,0-3-1.3-3-3v-42c0-1.6,1.4-3,3-3H460.4z" class="st0"></path>
+        <path id="letter-bg-shift-right" d="M668.8,185.4c0,1.7-1.3,3-3,3h-94.5c-1.6,0-3-1.3-3-3v-35.3c0-1.6,1.4-3,3-3h94.5c1.7,0,3,1.4,3,3V185.4z" class="st0"></path>
+      </g>
+      <g id="letters">
+        <text id="letter-wavyline" transform="matrix(1 0 0 1 33.4903 33.804)" dx="-3.015625" dy="0" class="st1 st2">～</text>
+        <text id="letter-tilda" transform="matrix(1 0 0 1 35.8009 52.6643)" dx="0" dy="0" class="st1 st2">`</text>
+        <text id="letter-1" transform="matrix(1 0 0 1 78.626 50.4071)" dx="0" dy="0" class="st1 st2">1</text>
+        <text id="letter-2" transform="matrix(1 0 0 1 123.299 51.1765)" dx="0" dy="0" class="st1 st2">2</text>
+        <text id="letter-3" transform="matrix(1 0 0 1 169.6841 51.404)" dx="0" dy="0" class="st1 st2">3</text>
+        <text id="letter-4" transform="matrix(1 0 0 1 213.0758 51.404)" dx="0" dy="0" class="st1 st2">4</text>
+        <text id="letter-5" transform="matrix(1 0 0 1 258.0724 51.404)" dx="0" dy="0" class="st1 st2">5</text>
+        <text id="letter-6" transform="matrix(1 0 0 1 303.2822 51.0891)" dx="0" dy="0" class="st1 st2">6</text>
+        <text id="letter-7" transform="matrix(1 0 0 1 349.5064 51.0891)" dx="0" dy="0" class="st1 st2">7</text>
+        <text id="letter-8" transform="matrix(1 0 0 1 393.281 51.2157)" dx="0" dy="0" class="st1 st2">8</text>
+        <text id="letter-9" transform="matrix(1 0 0 1 438.5742 51.2157)" dx="0" dy="0" class="st1 st2">9</text>
+        <text id="letter-0" transform="matrix(1 0 0 1 483.4907 51.2157)" dx="0" dy="0" class="st1 st2">0</text>
+        <text id="letter-minus" transform="matrix(1 0 0 1 530.4011 50.4071)" dx="0" dy="0" class="st1 st2">-</text>
+        <text id="letter-equal" transform="matrix(1 0 0 1 573.5195 51.2157)" dx="0" dy="0" class="st1 st2">=</text>
+        <text id="letter-exclamation-mark" transform="matrix(1 0 0 1 80.5513 31.7605)" dx="0" dy="0" class="st1 st2">!</text>
+        <text id="letter-at" transform="matrix(1 0 0 1 119.8565 30.45)" dx="0" dy="0" class="st1 st2">@</text>
+        <text id="letter-hashtag" transform="matrix(1 0 0 1 169.6841 31.76)" dx="0" dy="0" class="st1 st2">#</text>
+        <text id="letter-rmb" transform="matrix(1 0 0 1 213.0758 31.2171)" dx="-0.5" dy="0" class="st1 st2">$</text>
+        <text id="letter-percent" transform="matrix(1 0 0 1 255.5748 30.8318)" dx="0" dy="0" class="st1 st2">%</text>
+        <text id="letter-ellipsis" transform="matrix(1 0 0 1 303.9556 32.4427)" dx="-3.984375" dy="0" class="st1 st2">^</text>
+        <text id="letter-address" transform="matrix(1 0 0 1 348.2554 31.76)" dx="0" dy="0" class="st1 st2">&amp;</text>
+        <text id="letter-star" transform="matrix(1 0 0 1 394.5334 32.8236)" dx="0" dy="0" class="st1 st2">*</text>
+        <text id="letter-left-bracket" transform="matrix(1 0 0 1 440.3076 30.6435)" dx="0" dy="0" class="st1 st2">(</text>
+        <text id="letter-right-bracket" transform="matrix(1 0 0 1 485.1645 30.6435)" dx="0" dy="0" class="st1 st2">)</text>
+        <text id="letter-underline" transform="matrix(1 0 0 1 528.7588 25.5423)" dx="-3.5" dy="6" class="st1 st2">—</text>
+        <text id="letter-add" transform="matrix(1 0 0 1 573.5195 32.4422)" dx="0" dy="0" class="st1 st2">+</text>
+        <text id="letter-upper-q" transform="matrix(1 0 0 1 100.9088 75.4743)" dx="0" dy="0" class="st1">Q</text>
+        <text id="letter-lower-q" transform="matrix(1 0 0 1 100.9088 93.4743)" dx="-2.0703125" dy="-6" class="st1 b st2">q</text>
+        <text id="letter-upper-w" transform="matrix(1 0 0 1 145.3644 75.4744)" dx="0" dy="0" class="st1">W</text>
+        <text id="letter-lower-w" transform="matrix(1 0 0 1 145.3644 93.4744)" dx="-2.5" dy="-6" class="st1 b st2">w</text>
+        <text id="letter-upper-e" transform="matrix(1 0 0 1 190.5943 75.4744)" dx="0" dy="0" class="st1">E</text>
+        <text id="letter-lower-e" transform="matrix(1 0 0 1 190.5943 93.4744)" dx="-1.75" dy="-6" class="st1 b st2">e</text>
+        <text id="letter-upper-r" transform="matrix(1 0 0 1 236.9933 75.4743)" dx="0" dy="0" class="st1">R</text>
+        <text id="letter-lower-r" transform="matrix(1 0 0 1 236.9933 93.4743)" dx="-1" dy="-6" class="st1 b st2">r</text>
+        <text id="letter-upper-t" transform="matrix(1 0 0 1 280.6080 75.4744)" dx="0" dy="0" class="st1">T</text>
+        <text id="letter-lower-t" transform="matrix(1 0 0 1 280.6080 93.4744)" dx="-0.0000152587890625" dy="-6" class="st1 b st2">t</text>
+        <text id="letter-upper-y" transform="matrix(1 0 0 1 326.5138 75.4744)" dx="0" dy="0" class="st1">Y</text>
+        <text id="letter-lower-y" transform="matrix(1 0 0 1 326.5138 93.4744)" dx="-1.5" dy="-6" class="st1 b st2 active">y</text>
+        <text id="letter-upper-u" transform="matrix(1 0 0 1 371.1386 75.4743)" dx="0" dy="0" class="st1">U</text>
+        <text id="letter-lower-u" transform="matrix(1 0 0 1 371.1386 93.4743)" dx="-2.0703125" dy="-6" class="st1 b st2">u</text>
+        <text id="letter-upper-i" transform="matrix(1 0 0 1 418.5557 75.4743)" dx="0" dy="0" class="st1">I</text>
+        <text id="letter-lower-i" transform="matrix(1 0 0 1 418.5557 93.4743)" dx="-0.2265625" dy="-6" class="st1 b st2">i</text>
+        <text id="letter-upper-o" transform="matrix(1 0 0 1 459.9639 75.4743)" dx="0" dy="0" class="st1">O</text>
+        <text id="letter-lower-o" transform="matrix(1 0 0 1 459.9639 93.4743)" dx="-1.75" dy="-6" class="st1 b st2">o</text>
+        <text id="letter-upper-p" transform="matrix(1 0 0 1 506.9335 75.4743)" dx="0" dy="0" class="st1">P</text>
+        <text id="letter-lower-p" transform="matrix(1 0 0 1 506.9335 93.4743)" dx="-1.749969482421875" dy="-6" class="st1 b st2">p</text>
+        <text id="letter-upper-a" transform="matrix(1 0 0 1 112.1346 120.3303)" dx="0" dy="0" class="st1">A</text>
+        <text id="letter-lower-a" transform="matrix(1 0 0 1 112.1346 138.3303)" dx="-1.75" dy="-6" class="st1 b st2">a</text>
+        <text id="letter-upper-s" transform="matrix(1 0 0 1 156.0135 120.3303)" dx="0" dy="0" class="st1">S</text>
+        <text id="letter-lower-s" transform="matrix(1 0 0 1 156.0135 138.3303)" dx="-1.515625" dy="-6" class="st1 b st2">s</text>
+        <text id="letter-upper-d" transform="matrix(1 0 0 1 201.5241 120.3303)" dx="0" dy="0" class="st1">D</text>
+        <text id="letter-lower-d" transform="matrix(1 0 0 1 201.5241 138.3303)" dx="-2.0703125" dy="-6" class="st1 b st2">d</text>
+        <text id="letter-upper-f" transform="matrix(1 0 0 1 247.1121 120.3303)" dx="0" dy="0" class="st1">F</text>
+        <text id="letter-lower-f" transform="matrix(1 0 0 1 247.1121 138.3303)" dx="-0.5" dy="-6" class="st1 b st2">f</text>
+        <text id="letter-upper-g" transform="matrix(1 0 0 1 289.4753 120.3303)" dx="0" dy="0" class="st1">G</text>
+        <text id="letter-lower-g" transform="matrix(1 0 0 1 289.4753 138.3303)" dx="-2.0702972412109375" dy="-6" class="st1 b st2">g</text>
+        <text id="letter-upper-h" transform="matrix(1 0 0 1 335.5886 120.3303)" dx="0" dy="0" class="st1">H</text>
+        <text id="letter-lower-h" transform="matrix(1 0 0 1 335.5886 138.3303)" dx="-2.0703125" dy="-6" class="st1 b st2">h</text>
+        <text id="letter-upper-j" transform="matrix(1 0 0 1 382.2692 120.3303)" dx="0" dy="0" class="st1">J</text>
+        <text id="letter-lower-j" transform="matrix(1 0 0 1 382.2692 138.3303)" dx="-0.7265625" dy="-6" class="st1 b st2">j</text>
+        <text id="letter-upper-k" transform="matrix(1 0 0 1 426.0182 120.3303)" dx="0" dy="0" class="st1">K</text>
+        <text id="letter-lower-k" transform="matrix(1 0 0 1 426.0182 138.3303)" dx="-2" dy="-6" class="st1 b st2">k</text>
+        <text id="letter-upper-l" transform="matrix(1 0 0 1 470.8706 120.3303)" dx="0" dy="0" class="st1">L</text>
+        <text id="letter-lower-l" transform="matrix(1 0 0 1 470.8706 138.3303)" dx="-0.2265625" dy="-6" class="st1 b st2">l</text>
+        <text id="letter-upper-z" transform="matrix(1 0 0 1 134.7896 163.7458)" dx="0" dy="0" class="st1">Z</text>
+        <text id="letter-lower-z" transform="matrix(1 0 0 1 134.7896 181.7458)" dx="-1.015625" dy="-6" class="st1 b st2">z</text>
+        <text id="letter-upper-x" transform="matrix(1 0 0 1 179.2339 163.7458)" dx="0" dy="0" class="st1">X</text>
+        <text id="letter-lower-x" transform="matrix(1 0 0 1 179.2339 181.7458)" dx="-2" dy="-6" class="st1 b st2">x</text>
+        <text id="letter-upper-c" transform="matrix(1 0 0 1 222.5416 163.7458)" dx="0" dy="0" class="st1">C</text>
+        <text id="letter-lower-c" transform="matrix(1 0 0 1 222.5416 181.7458)" dx="-2" dy="-6" class="st1 b st2">c</text>
+        <text id="letter-upper-v" transform="matrix(1 0 0 1 269.3973 163.7458)" dx="0" dy="0" class="st1">V</text>
+        <text id="letter-lower-v" transform="matrix(1 0 0 1 269.3973 181.7458)" dx="-1.0156097412109375" dy="-6" class="st1 b st2">v</text>
+        <text id="letter-upper-b" transform="matrix(1 0 0 1 314.0098 163.7458)" dx="0" dy="0" class="st1">B</text>
+        <text id="letter-lower-b" transform="matrix(1 0 0 1 314.0098 181.7458)" dx="-1.750030517578125" dy="-6" class="st1 b st2">b</text>
+        <text id="letter-upper-n" transform="matrix(1 0 0 1 358.4863 163.7458)" dx="0" dy="0" class="st1">N</text>
+        <text id="letter-lower-n" transform="matrix(1 0 0 1 358.4863 181.7458)" dx="-2.0703125" dy="-6" class="st1 b st2">n</text>
+        <text id="letter-upper-m" transform="matrix(1 0 0 1 401.6816 163.7458)" dx="0" dy="0" class="st1">M</text>
+        <text id="letter-lower-m" transform="matrix(1 0 0 1 401.6816 181.7458)" dx="-3.59375" dy="-6" class="st1 b st2">m</text>
+        <text id="letter-semicolon" transform="matrix(1 0 0 1 519.074 136.7127)" dx="0" dy="0" class="st1 st2">;</text>
+        <text id="letter-colon" transform="matrix(1 0 0 1 519.074 119.3763)" dx="0" dy="0" class="st1 st2">:</text>
+        <text id="letter-comma" transform="matrix(1 0 0 1 451.3285 180.0409)" dx="-1.25" dy="0" class="st1 b2 st2">,</text>
+        <text id="letter-left-lower-bracket" transform="matrix(1 0 0 1 450.2827 164.3396)" dx="0" dy="0" class="st1 st2">&lt;</text>
+        <text id="letter-dot" transform="matrix(1 0 0 1 495.9731 181.0409)" dx="-1.25" dy="0" class="st1 b2 st2">.</text>
+        <text id="letter-right-lower-bracket" transform="matrix(1 0 0 1 494.9274 164.3396)" dx="0" dy="0" class="st1 st2">&gt;</text>
+        <text id="letter-slash" transform="matrix(1 0 0 1 543.4077 181.0408)" dx="0" dy="0" class="st1 st2">/</text>
+        <text id="letter-question-mark" transform="matrix(1 0 0 1 541.3276 163.2498)" dx="0" dy="0" class="st1 st2">?</text>
+        <text id="letter-single-quote" transform="matrix(1 0 0 1 565.621 138.7127)" dx="0" dy="0" class="st1 st2">'</text>
+        <text id="letter-double-quote" transform="matrix(1 0 0 1 565.621 120.3763)" dx="0" dy="0" class="st1 st2">"</text>
+        <text id="letter-left-center-bracket" transform="matrix(1 0 0 1 553.3923 94.426)" dx="0" dy="0" class="st1 st2">[</text>
+        <text id="letter-right-center-bracket" transform="matrix(1 0 0 1 598.7657 94.426)" dx="0" dy="0" class="st1 st2">]</text>
+        <text id="letter-left-big-bracket" transform="matrix(1 0 0 1 552.9709 74.8769)" dx="0" dy="0" class="st1 st2">
+          {
+        </text>
+        <text id="letter-right-big-bracket" transform="matrix(1 0 0 1 598.3443 74.7849)" dx="0" dy="0" class="st1 st2">}</text>
+        <text id="letter-backslash" transform="matrix(1 0 0 1 644.3574 96.8807)" dx="0" dy="0" class="st1 st2">\</text>
+        <text id="letter-vertical-bar" transform="matrix(1 0 0 1 644.4941 74.8769)" dx="0" dy="0" class="st1 st2">|</text>
+        <text id="letter-tab" transform="matrix(1 0 0 1 23.3467 93.2342)" class="st1 s st2">⇥首行缩进</text>
+        <text id="letter-caps-lock" transform="matrix(1 0 0 1 23.3467 137.7127)" class="st1 s st2">⇪ 大写锁定</text>
+        <text id="letter-shift-left" transform="matrix(1 0 0 1 23.3467 181.0408)" class="st1 s st2">Shift</text>
+        <text id="letter-shift-right" transform="matrix(1 0 0 1 641.826 180.0408)" dx="-2.00726318359375" class="st1 s st2">Shift</text>
+        <text id="letter-backspace" transform="matrix(1 0 0 1 606.4653 51.1765)" dx="20.38909912109375" class="st1 s st2">⇦ 退格</text>
+        <text id="letter-enter" transform="matrix(1 0 0 1 636.3144 137.7128)" dx="-27.7149658203125" class="st1 s st2">Enter 回车</text>
+        <text id="letter-control" transform="matrix(1 0 0 1 23.3467 232.465)" class="st1 s st2">Ctrl</text>
+        <text id="letter-alt-left" transform="matrix(1 0 0 1 129.2338 231.4646)" class="st1 s st2">Alt</text>
+        <text id="letter-space" transform="matrix(1 0 0 1 199.7899 232.4646)" class="st1 s st2">Space 空格</text>
+        <text id="letter-alt-right" transform="matrix(1 0 0 1 483.8864 231.4646)" class="st1 s st2">Alt</text>
+      </g>
+    </svg>
