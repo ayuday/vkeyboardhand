@@ -182,6 +182,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | `showFingerLabel` | `boolean` | `true` | Show the finger-hint bar |
 | `showFingerColors` | `boolean` | `false` | Color keys by finger (on by default in the `colorful` theme, can be enabled manually in others) |
 | `showBanner` | `boolean` | `true` | Print a version + repository banner to the console after init |
+| `showHandBoth` | `boolean` | `true` | Keep both hands' natural resting state visible while a key is pressed (`true`: both neutral hands stay shown alongside the pressed gesture; `false`: pressing a left-hand key hides the right hand and vice versa) |
 | `holdDelay` | `number` | `80` | Hand-gesture transition delay (ms) |
 | `keyboardClass` | `string` | `'standard-kb'` | Extra class name for the keyboard SVG |
 | `keyMap` | `object` | `KEY_MAP` | Override the `KeyboardEvent.code → key` mapping |
@@ -201,6 +202,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | `reset()` | Reset all highlights and gestures (back to both hands' natural resting position) |
 | `setTheme(theme)` | Switch theme |
 | `setClickEnabled(bool)` | Enable / disable click-to-demo |
+| `setShowHandBoth(bool)` | Enable / disable keeping both neutral hands visible while pressing |
 | `getState()` | Get the list of currently held keys |
 | `getFinger(key)` | Get the finger info for a key |
 | `destroy()` | Destroy the component, release listeners and DOM |

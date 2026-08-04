@@ -182,6 +182,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | `showFingerLabel` | `boolean` | `true` | 显示指法提示条 |
 | `showFingerColors` | `boolean` | `false` | 按键按手指配色（`colorful` 主题默认开启，其余主题可手动开启） |
 | `showBanner` | `boolean` | `true` | 初始化后在控制台输出版本与仓库信息横幅 |
+| `showHandBoth` | `boolean` | `true` | 保持双手自然 resting 状态可见，当按键被按下时 (`true`: 两个中性手保持显示，与按下的手势并排；`false`: 按下左手按键时隐藏右手，反之亦然) |
 | `holdDelay` | `number` | `80` | 手势切换动画延迟（ms） |
 | `keyboardClass` | `string` | `'standard-kb'` | 键盘 SVG 附加类名 |
 | `keyMap` | `object` | `KEY_MAP` | 覆盖 `KeyboardEvent.code → key` 映射 |

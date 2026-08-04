@@ -7,100 +7,31 @@
   <link rel="stylesheet" href="./dist/vkeyboardhand.css">
   <style>
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(160deg, #f6f8fc 0%, #eef2f8 100%);
-      font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      color: #23272f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 16px 60px;
-    }
-
+    body { margin: 0; min-height: 100vh; background: linear-gradient(160deg, #f6f8fc 0%, #eef2f8 100%); font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: #23272f; display: flex; flex-direction: column; align-items: center; padding: 40px 16px 60px; }
     .page-head { text-align: center; margin-bottom: 28px; }
     .page-head h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: 0.5px; }
     .page-head p { margin: 0; color: #6b7280; font-size: 14px; }
-
-    .demo-card {
-      width: 100%;
-      max-width: 780px;
-      background: #fff;
-      border: 1px solid #e5e9f2;
-      border-radius: 16px;
-      box-shadow: 0 18px 50px rgba(31, 45, 77, 0.1);
-      padding: 36px 28px 48px;
-    }
-
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 26px;
-    }
-
-    .toolbar button {
-      border: 1px solid #d8dee9;
-      background: #fff;
-      color: #374151;
-      border-radius: 999px;
-      padding: 7px 16px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-
+    .demo-card { width: 100%; max-width: 780px; background: #fff; border: 1px solid #e5e9f2; border-radius: 16px; box-shadow: 0 18px 50px rgba(31, 45, 77, 0.1); padding: 36px 28px 48px; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; margin-bottom: 26px; }
+    .toolbar button { border: 1px solid #d8dee9; background: #fff; color: #374151; border-radius: 999px; padding: 7px 16px; font-size: 13px; cursor: pointer; transition: all 0.18s ease; }
     .toolbar button:hover { border-color: #79bbff; color: #1d63c9; }
     .toolbar button.active { background: #79bbff; border-color: #79bbff; color: #fff; }
-
-    .hint {
-      text-align: center;
-      color: #9aa3b2;
-      font-size: 12px;
-      margin-top: 34px;
-    }
-
-    .hint kbd {
-      background: #f1f4f9;
-      border: 1px solid #d8dee9;
-      border-bottom-width: 2px;
-      border-radius: 5px;
-      padding: 1px 7px;
-      font-size: 11px;
-      color: #4b5563;
-    }
-
-    .github-corner {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      z-index: 100;
-      width: 40px;
-      height: 40px;
-      color: #23272f;
-      opacity: 0.85;
-      transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-
-    .github-corner:hover {
-      opacity: 1;
-      transform: translateY(-2px);
-    }
-
+    .hint { text-align: center; color: #9aa3b2; font-size: 12px; margin-top: 34px; }
+    .hint kbd { background: #f1f4f9; border: 1px solid #d8dee9; border-bottom-width: 2px; border-radius: 5px; padding: 1px 7px; font-size: 11px; color: #4b5563; }
+    .github-corner { position: fixed; top: 16px; right: 16px; z-index: 100; width: 40px; height: 40px; color: #23272f; opacity: 0.85; transition: opacity 0.2s ease, transform 0.2s ease; }
+    .github-corner:hover { opacity: 1; transform: translateY(-2px); }
     .vk-hand { margin-top: 8px; }
   </style>
 </head>
+
 <body>
 
   <!-- GitHub 仓库入口 -->
-  <a class="github-corner" href="https://github.com/ayuday/vkeyboardhand"
-     target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub"
-     title="vkeyboardhand · GitHub">
+  <a class="github-corner" href="https://github.com/ayuday/vkeyboardhand" target="_blank" rel="noopener noreferrer"
+    aria-label="View source on GitHub" title="vkeyboardhand · GitHub">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      <path
+        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
     </svg>
   </a>
 
@@ -109,8 +40,7 @@
     <p>SVG 键盘图 + SVG 手势图 + JavaScript 事件驱动 · 交互式指法教学组件。纯 HTML + JS 实现、零依赖，兼容 Vue / React / Angular 等前端框架</p>
   </header>
 
-  <main class="demo-card">
-    <div class="toolbar">
+  <div class="toolbar">
       <button data-theme="colorful" class="active">彩虹</button>
       <button data-theme="bone">骨白</button>
       <button data-theme="dark">暗色</button>
@@ -119,8 +49,11 @@
       <button data-theme="milk">奶色</button>
       <span style="width:1px;height:18px;background:#e5e9f2;display:inline-block"></span>
       <button id="btn-click">点击演示：开</button>
+      <button id="btn-hand-both">双手常显：关</button>
       <button id="btn-reset">重置</button>
-    </div>
+  </div>
+
+  <main class="demo-card">
 
     <div id="vk-demo"></div>
     <p class="hint">
@@ -179,10 +112,19 @@
       this.textContent = '点击演示：' + (clickOn ? '开' : '关');
     });
 
+    // 双手常显开关（showHandBoth）
+    var handBothOn = false;
+    document.getElementById('btn-hand-both').addEventListener('click', function () {
+      handBothOn = !handBothOn;
+      instance.setShowHandBoth(handBothOn);
+      this.textContent = '双手常显：' + (handBothOn ? '开' : '关');
+    });
+
     // 重置
     document.getElementById('btn-reset').addEventListener('click', function () {
       instance.reset();
     });
   </script>
 </body>
+
 </html>

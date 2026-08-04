@@ -15,6 +15,7 @@
 - 三种引入方式：本地引入 / CDN（jsDelivr、unpkg）/ npm + ESM，兼容 Vue / React / Angular
 - 完整 API：`press / release / reset / setTheme / setClickEnabled / getState / getFinger / destroy` 及事件回调
 - 控制台横幅：初始化时输出版本与仓库信息（可用 `showBanner: false` 关闭）
+- 新增配置项 `showHandBoth`：按键按下时可选择同时显示双手自然状态，并提供 `setShowHandBoth` 动态开关
 
 ### 修复
 

@@ -115,6 +115,7 @@
     showFingerLabel: true,      // 显示指法提示条
     showFingerColors: false,    // 按键按手指配色（colorful 主题默认开启，其余主题可手动开启）
     showBanner: true,           // 初始化后在控制台输出版本与仓库信息横幅
+    showHandBoth: true,        // 按键按下时是否同时显示双手自然状态（true：双手常显；false：左手按键隐右手、右手按键隐左手）
     holdDelay: 80,              // 手势切换动画延迟（ms）
     keyboardClass: 'standard-kb',
     onKeyDown: null,
@@ -519,6 +520,12 @@
         show['hand-neutral-left'] = true;
         show['hand-neutral-right'] = true;
       } else {
+        // showHandBoth：按下时保留双手自然状态作为背景
+        if (this.options.showHandBoth) {
+          show['hand-neutral-left'] = true;
+          show['hand-neutral-right'] = true;
+        }
+
         // 修饰键组合（shift + alt）
         if (shift && alt) {
           if (has('shift-left') || has('alt-left')) show['hand-shift-alt-left'] = true;
@@ -622,6 +629,13 @@
     /** 是否启用按手指配色（colorful 主题默认开启） */
     _useFingerColors() {
       return !!(this.options.showFingerColors || this.options.theme === 'colorful');
+    }
+
+    /** 开/关“按下时同时显示双手自然状态” */
+    setShowHandBoth(enabled) {
+      this.options.showHandBoth = !!enabled;
+      this._render(null);
+      return this;
     }
 
     /** 按当前主题/配置为键帽挂载或移除 data-finger 属性 */
