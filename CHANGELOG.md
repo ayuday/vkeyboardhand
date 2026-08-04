@@ -4,6 +4,13 @@
 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.0.2] - 2026-08-04
+
+### 变更
+
+- LICENSE 版权持有人与 `package.json` 的 `author` 统一为 `ayuday`
+- 验证 npm 自动发布全流程（`NPM_TOKEN` 使用仓库级 Repository Secret）
+
 ## [1.0.1] - 2026-08-04
 
 ### 新增
@@ -15,7 +22,6 @@
 ### 变更
 
 - 文档补充 npm 自动发布流程与 GitHub Pages 环境配置说明
-- LICENSE 版权持有人与 `package.json` 的 `author` 统一为 `ayuday`
 
 ## [1.0.0] - 2026-08-03
 
@@ -40,5 +46,6 @@
 - SVG 素材移入 `svg/` 目录，组件默认路径与文档同步更新
 - 开源仓库：https://github.com/ayuday/vkeyboardhand
 
+[1.0.2]: https://github.com/ayuday/vkeyboardhand/releases/tag/v1.0.2
 [1.0.1]: https://github.com/ayuday/vkeyboardhand/releases/tag/v1.0.1
 [1.0.0]: https://github.com/ayuday/vkeyboardhand/releases/tag/v1.0.0
