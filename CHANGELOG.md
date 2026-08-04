@@ -15,6 +15,7 @@
 ### 变更
 
 - 文档补充 npm 自动发布流程与 GitHub Pages 环境配置说明
+- LICENSE 版权持有人与 `package.json` 的 `author` 统一为 `ayuday`
 
 ## [1.0.0] - 2026-08-03
 
