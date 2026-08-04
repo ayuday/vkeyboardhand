@@ -1,6 +1,6 @@
 {
   "name": "vkeyboardhand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "交互式指法教学组件：SVG 键盘图 + SVG 手势图 + JavaScript 事件驱动联动，兼容 Vue/React/Angular，支持本地引入、CDN、npm。",
   "keywords": [
     "keyboard",
@@ -55,12 +55,16 @@
     "*.css"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build && npm test",
     "build": "node scripts/build.mjs",
     "preview": "npx serve .",
     "test": "node --test scripts/*.test.mjs"
   },
   "engines": {
     "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {}
 }

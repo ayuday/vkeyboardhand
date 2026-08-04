@@ -2,3 +2,4 @@ node_modules/
 .verify/
 npm-debug.log*
 *.log
+/my.md

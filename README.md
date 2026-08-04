@@ -316,6 +316,31 @@ pnpm preview    # local preview of index.html
 └── package.json
 ```
 
+## Auto-publish to npm
+
+GitHub Actions workflows handle quality gates and releases:
+
+- **`.github/workflows/ci.yml`** — on push to `main` / pull requests: runs `npm run build` + `npm test` (quality gate only)
+- **`.github/workflows/release.yml`** — on tag `v*`: verifies `package.json` version matches the tag, runs `npm publish` with the `NPM_TOKEN` secret, and creates a GitHub Release with auto-generated notes
+
+One-time setup: generate an **Automation** token at npmjs.com (publish permission), then add it as the `NPM_TOKEN` repository secret (Settings → Secrets and variables → Actions).
+
+Release flow:
+
+```bash
+npm version patch            # bump package.json + create tag v1.0.1
+git push origin main --tags  # pushes commit and tag: CI runs, then release.yml publishes to npm
+```
+
+## Deploy to GitHub Pages
+
+`.github/workflows/deploy-gh-pages.yml` deploys `index.html` + `dist/` + `svg/` to GitHub Pages on every push to `main`, keeping the custom domain `https://vk.markdownlang.com` via the `CNAME` file.
+
+Required settings (one-time):
+
+1. **Settings → Environments → `github-pages` → Deployment branches**: set to **All branches** (or add `main`). If it still only allows `gh-pages`, the deploy job is rejected with *"Branch 'main' is not allowed to deploy to github-pages due to environment protection rules"*.
+2. **Settings → Pages → Source**: select **GitHub Actions** (not "Deploy from a branch"); confirm the custom domain `vk.markdownlang.com`.
+
 ## Browser Support
 
 Supports all modern browsers (Chrome / Edge / Firefox / Safari), relying on standard APIs: `fetch`, `DOMParser`, `classList`, `KeyboardEvent`.
