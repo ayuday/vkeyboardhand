@@ -291,12 +291,12 @@ const kb = VKeyboardHand.create('#demo', {
 ## Development & Build
 
 ```bash
-npm install        # install dev dependencies (currently 0, pure Node build)
-npm run build      # generate dist/ (UMD + ESM + CSS)
-npm run preview    # local preview of index.html
+pnpm install        # install dev dependencies (currently 0, pure Node build)
+pnpm build      # generate dist/ (UMD + ESM + CSS)
+pnpm preview    # local preview of index.html
 ```
 
-Directory structure:
+## Directory structure:
 
 ```text
 ├── src/
@@ -325,7 +325,14 @@ Supports all modern browsers (Chrome / Edge / Firefox / Safari), relying on stan
 - [markdown](https://www.markdownlang.com) (markdown)
 
 ## ⭐ Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=ayuday/vkeyboardhand&type=Date)](https://star-history.com/#ayuday/vkeyboardhand&Date)
+
+<a href="https://www.star-history.com/?repos=ayuday%2Fvkeyboardhand&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&theme=dark&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+ </picture>
+</a>
 
 
 ## License

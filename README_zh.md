@@ -261,12 +261,12 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 ## 资源文件说明
 
 - `svg/keyboard.svg`：虚拟键盘矢量图
-- `keyboard.md`：svg/keyboard.svg 中 `id` 选择器对应实体键盘按键的键位映射表
-- `colorful.md`：彩虹色键盘样式约定（手指区域配色与按键状态覆盖色）
-- `keyboard.html`：虚拟键盘矢量图样式预览
+- `assets/keyboard.md`：svg/keyboard.svg 中 `id` 选择器对应实体键盘按键的键位映射表
+- `assets/colorful.md`：彩虹色键盘样式约定（手指区域配色与按键状态覆盖色）
+- `assets/keyboard.html`：虚拟键盘矢量图样式预览
 - `svg/hand.svg`：键盘手势矢量图
-- `hand.md`：svg/hand.svg 中 `id` 选择器对应实体键盘按键的手势映射表
-- `keyboard+hand.html`：虚拟键盘 + 手势矢量图样式预览
+- `assets/hand.md`：svg/hand.svg 中 `id` 选择器对应实体键盘按键的手势映射表
+- `assets/keyboard+hand.html`：虚拟键盘 + 手势矢量图样式预览
 - `letter-bg-*`：键盘按键背景（`<path id="letter-bg-q">`）
 - `letters-*` / `letter-*`：键盘按键里的字母或字符（`<text id="letter-lower-q">`）
 - `hand-*`：手势分组（`<g id="hand-q">`），组件通过显隐这些分组实现手势联动
@@ -291,12 +291,12 @@ const kb = VKeyboardHand.create('#demo', {
 ## 开发与构建
 
 ```bash
-npm install        # 安装开发依赖（当前为 0，纯 Node 构建）
-npm run build      # 生成 dist/（UMD + ESM + CSS）
-npm run preview    # 本地预览 index.html
+pnpm install        # 安装开发依赖（当前为 0，纯 Node 构建）
+pnpm build      # 生成 dist/（UMD + ESM + CSS）
+pnpm preview    # 本地预览 index.html
 ```
 
-目录结构：
+## 目录结构：
 
 ```text
 ├── src/
@@ -325,8 +325,14 @@ npm run preview    # 本地预览 index.html
 - [markdown](https://www.markdownlang.com)（markdown）
 
 ## ⭐ Star 历史
-[![Star History Chart](https://api.star-history.com/svg?repos=ayuday/vkeyboardhand&type=Date)](https://star-history.com/#ayuday/vkeyboardhand&Date)
 
+<a href="https://www.star-history.com/?repos=ayuday%2Fvkeyboardhand&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&theme=dark&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ayuday/vkeyboardhand&type=date&legend=top-left&sealed_token=0gMklRkZmlzMNv3aS599q52vM3sWoD-7t0rXTOufF15TqjMqydOLJcgHst4v1il1jRXmaPbU7enL5QHOIoF5SEbv5GNYTuTb_VZ0cxQCvk_BmUMnPBlvCg" />
+ </picture>
+</a>
 
 ## License
 
