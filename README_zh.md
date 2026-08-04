@@ -67,12 +67,14 @@
 发布到 npm 后可直接使用 CDN（jsDelivr / unpkg）：
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/dist/vkeyboardhand.css">
-<script src="https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/dist/vkeyboardhand.umd.js"></script>
-<!-- 或 https://unpkg.com/vkeyboardhand@1.0.0/dist/vkeyboardhand.umd.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/dist/vkeyboardhand.css">
+<script src="https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/dist/vkeyboardhand.umd.js"></script>
+<!-- 或 -->
+<link rel="stylesheet" href="https://unpkg.com/vkeyboardhand@latest/dist/vkeyboardhand.css">
+<script src="https://unpkg.com/vkeyboardhand@latest/dist/vkeyboardhand.umd.js"></script>
 ```
 
-> 键盘图与手势图可从包内获取：`https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/svg/keyboard.svg`、`.../svg/hand.svg`。
+> 键盘图与手势图可从包内获取：`https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/svg/keyboard.svg`、`.../svg/hand.svg`。
 
 ### 方法 2：npm 安装（Vue / React / Angular）
 

@@ -67,12 +67,14 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
 Once published to npm, it can be used directly from a CDN (jsDelivr / unpkg):
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/dist/vkeyboardhand.css">
-<script src="https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/dist/vkeyboardhand.umd.js"></script>
-<!-- or https://unpkg.com/vkeyboardhand@1.0.0/dist/vkeyboardhand.umd.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/dist/vkeyboardhand.css">
+<script src="https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/dist/vkeyboardhand.umd.js"></script>
+<!-- or -->
+<link rel="stylesheet" href="https://unpkg.com/vkeyboardhand@latest/dist/vkeyboardhand.css">
+<script src="https://unpkg.com/vkeyboardhand@latest/dist/vkeyboardhand.umd.js"></script>
 ```
 
-> The keyboard and hand-gesture SVGs can be fetched from the package: `https://cdn.jsdelivr.net/npm/vkeyboardhand@1.0.0/svg/keyboard.svg`, `.../svg/hand.svg`.
+> The keyboard and hand-gesture SVGs can be fetched from the package: `https://cdn.jsdelivr.net/npm/vkeyboardhand@latest/svg/keyboard.svg`, `.../svg/hand.svg`.
 
 ### Method 2: npm install (Vue / React / Angular)
 
