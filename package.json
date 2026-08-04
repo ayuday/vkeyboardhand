@@ -1,7 +1,7 @@
 {
   "name": "vkeyboardhand",
-  "version": "1.0.2",
-  "description": "交互式指法教学组件：SVG 键盘图 + SVG 手势图 + JavaScript 事件驱动联动，兼容 Vue/React/Angular，支持本地引入、CDN、npm。",
+  "version": "1.0.3",
+  "description": "vkeyboardhand · Interactive Virtual Keyboard Touch-Typing Teaching Component! 交互式指法教学组件：SVG 键盘图 + SVG 手势图 + JavaScript 事件驱动联动，兼容 Vue/React/Angular，支持本地引入、CDN、npm。",
   "keywords": [
     "keyboard",
     "svg",
