@@ -18,6 +18,10 @@
 
 - `play()` 连续演示及按键演示时手势重叠：`showHandBoth: false` 由“隐藏双手自然状态、仅显示按键手势”修正为“同侧自然状态被按键手势替代（隐藏）、对侧自然状态保留”，按键复原后恢复双手自然状态（详见 `fix.md`）
 
+### 变更
+
+- GitHub Actions 工作流统一 Node.js 版本与 action 版本：`ci.yml` / `deploy-gh-pages.yml` / `release.yml` 中全部 4 处 `node-version` 由 `20` 改为 `24`；`deploy-gh-pages.yml` 的 `actions/setup-node` 由 `@v5` 统一为 `@v6`（与其余 workflow 一致）
+
 ### 验证结果
 
 - 无头 Chrome 实测：`#vk-demo-2` 内 `letter-bg-y` 高亮、`hand-y` 显示、`hand-neutral-right` 隐藏、`hand-neutral-left` 保留、指法标签显示“右手食指 按 Y”
@@ -42,6 +46,7 @@
 | 演示页切换新语义并更新注释 | `index.html` | 实例 3 使用 `showHandBoth: true`（双手常显导致重叠） | 实例 3 改为 `showHandBoth: false`，实例 2 注释同步 |
 | 文档同步语义 | `README.md` / `README_zh.md` | `showHandBoth: false` 描述为“按下左手键隐藏右手” | 明确为“同侧自然状态被按键手势替代、对侧保留” |
 | 新增 bug 修复记录 | `fix.md` | 不存在 | 按规范记录问题描述、修复方法、验证结果与修改文件表格 |
+| 统一工作流 Node 与 action 版本 | `.github/workflows/ci.yml` / `deploy-gh-pages.yml` / `release.yml` | `node-version: 20`（共 4 处）；`deploy-gh-pages.yml` 的 `setup-node@v5` | `node-version: 24`（共 4 处）；`setup-node@v6` 全部一致 |
 
 ## [1.0.2] - 2026-08-04
 
