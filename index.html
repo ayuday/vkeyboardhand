@@ -78,6 +78,7 @@
 &lt;/script&gt;</code></pre>
   </main>
 
+  <!-- 实例 2  -->
   <main class="demo-card">
 
     <h2 class="demo-title">实例 2 · 固定演示按键 Y（关闭键盘监听）</h2>
@@ -97,6 +98,31 @@
     showHandBoth: false,    // 正确手势：只显示按 Y 的右手，隐藏左手
     onReady: function (kb) {
       kb.press('y');        // 演示按键 Y：键盘高亮 + 正确手势（右手食指）
+    }
+  });
+&lt;/script&gt;</code></pre>
+  </main>
+
+  <!-- 实例 3  -->
+  <main class="demo-card">
+
+    <h2 class="demo-title">实例 3 · 连续按键演示 hello（关闭键盘监听）</h2>
+    <div id="vk-demo-3"></div>
+    <p class="hint">
+      自动连续演示按键 <kbd>h</kbd> <kbd>e</kbd> <kbd>l</kbd> <kbd>l</kbd> <kbd>o</kbd>：
+      逐键键盘高亮 + 正确手势（<code>play()</code> API），不响应真实键盘输入
+    </p>
+
+    <h3 class="code-title">代码用法（Code Usage）</h3>
+    <pre class="code-block"><code>&lt;div id="vk-demo-3"&gt;&lt;/div&gt;
+&lt;script&gt;
+  VKeyboardHand.create('#vk-demo-3', {
+    keyboard: './svg/keyboard.svg',
+    hand: './svg/hand.svg',
+    listenKeyboard: false,  // 关闭键盘监听（键盘事件监听）
+    enableClick: false,     // 关闭点击演示，保持演示态
+    onReady: function (kb) {
+      kb.play('hello', { pressTime: 450, gap: 120 });  // 连续演示 hello
     }
   });
 &lt;/script&gt;</code></pre>
@@ -140,10 +166,25 @@
       theme: 'colorful',
       listenKeyboard: false,   // 关闭键盘监听（键盘事件监听）
       enableClick: false,      // 关闭点击演示，保持固定演示态
-      showHandBoth: false,     // 正确手势：只显示按 Y 的右手，隐藏左手
+      showHandBoth: false,     // 正确手势：按 Y 的右手手势替代右手自然状态，左手自然状态保留
       showFingerLabel: true,
       onReady: function (kb) {
         kb.press('y');         // 演示按键 Y：键盘高亮 + 正确手势（右手食指）
+      }
+    });
+
+    // 实例 3：关闭键盘监听，渲染后连续演示按键 hello 的键盘状态与正确手势
+    var demo3 = VKeyboardHand.create('#vk-demo-3', {
+      keyboard: './svg/keyboard.svg',
+      hand: './svg/hand.svg',
+      theme: 'colorful',
+      listenKeyboard: false,   // 关闭键盘监听（键盘事件监听）
+      enableClick: false,      // 关闭点击演示，保持固定演示态
+      showHandBoth: false,     // 同侧自然状态被按键手势替代：左手键隐藏左手、右手键隐藏右手，对侧保留
+      showFingerLabel: true,
+      onReady: function (kb) {
+        // 连续演示 hello：每键按住 450ms，松开后间隔 120ms
+        kb.play('hello', { pressTime: 450, gap: 120, loop: true });
       }
     });
 

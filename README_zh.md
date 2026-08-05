@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/纯JS-零依赖-4fc08d" alt="pure JS zero dependency">
 </p>
 
-[English](README.md) | [简体中文](README_zh.md)
+[English](README.md) | [简体中文](README_zh.md) | [日本語](README_ja.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Português](README_pt.md) | [Español](README_es.md)
 
 <p align="center">
   <img src="./assets/vkeyboardhand.jpg" alt="vkeyboardhand"  />
@@ -32,7 +32,7 @@
 - 🎨 彩虹配色（默认主题）：按键按手指区域着色，左冷右暖形成彩虹渐变（配色约定见 `colorful.md`）。
 - 🧩 框架无关：组件内部只操作 DOM，不依赖任何框架，Vue / React / Angular 均可直接使用。
 - 📦 三种引入方式：本地 `<script>`、CDN、npm + ESM。
-- ⚙️ 完整 API：`press / release / reset / setTheme / setClickEnabled / getState / destroy` 及事件回调。
+- ⚙️ 完整 API：`press / release / play / reset / setTheme / setClickEnabled / getState / destroy` 及事件回调。
 - 🗂 键位映射表（数据层）：`按键 → 手指 → SVG id` 三层映射，可通过配置覆盖。
 
 ## 技术栈
@@ -184,7 +184,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | `showFingerLabel` | `boolean` | `true` | 显示指法提示条 |
 | `showFingerColors` | `boolean` | `false` | 按键按手指配色（`colorful` 主题默认开启，其余主题可手动开启） |
 | `showBanner` | `boolean` | `true` | 初始化后在控制台输出版本与仓库信息横幅 |
-| `showHandBoth` | `boolean` | `true` | 保持双手自然 resting 状态可见，当按键被按下时 (`true`: 两个中性手保持显示，与按下的手势并排；`false`: 按下左手按键时隐藏右手，反之亦然) |
+| `showHandBoth` | `boolean` | `true` | 按键按下时自然手的显示策略：`true` 保留双手自然状态作为背景，与按键手势并排；`false` 同侧自然状态被按键手势替代（隐藏），对侧自然状态保留，全部松开后双手自然状态恢复 |
 | `holdDelay` | `number` | `80` | 手势切换动画延迟（ms） |
 | `keyboardClass` | `string` | `'standard-kb'` | 键盘 SVG 附加类名 |
 | `keyMap` | `object` | `KEY_MAP` | 覆盖 `KeyboardEvent.code → key` 映射 |
@@ -201,6 +201,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | --- | --- |
 | `press(key, meta?)` | 按下指定键（key 为键名，如 `'q'`、`'shift-left'`） |
 | `release(key, meta?)` | 松开指定键 |
+| `play(keys, options?)` | 连续演示一串按键（打字序列），如 `kb.play('hello')`，可设置每键按住时长、间隔与 `loop` 循环播放；返回 Promise |
 | `reset()` | 重置所有高亮与手势（恢复双手自然状态） |
 | `setTheme(theme)` | 切换主题 |
 | `setClickEnabled(bool)` | 开 / 关点击演示 |

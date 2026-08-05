@@ -469,6 +469,42 @@
       return this;
     }
 
+    /**
+     * 连续演示一串按键（打字序列）：逐键按下 → 停留 → 松开 → 间隔 → 下一个键。
+     * 适合关闭键盘监听（listenKeyboard: false）时按脚本顺序演示单词 / 指法。
+     * @param {string|string[]} keys 按键序列：字符串（如 'hello'，自动转小写、空格映射为 'space'）
+     *                              或键名数组（如 ['h','e','l','l','o']）
+     * @param {Object} [options] 可选参数
+     * @param {number} [options.pressTime=500] 每个键按住停留时长（ms）
+     * @param {number} [options.gap=150] 松开后到下一个键的间隔时长（ms）
+     * @param {boolean} [options.loop=false] 是否循环播放（默认 false，播完一遍即结束；true 时自动循环，直到组件销毁）
+     * @param {Function} [options.onStep] 每步回调 onStep(key, kb)
+     * @returns {Promise<void>} 播放完成后 resolve 的 Promise
+     */
+    play(keys, options) {
+      const opts = options || {};
+      const list = Array.isArray(keys)
+        ? keys
+        : String(keys).toLowerCase().split('').map((c) => (c === ' ' ? 'space' : c));
+      const pressTime = opts.pressTime == null ? 500 : opts.pressTime;
+      const gap = opts.gap == null ? 150 : opts.gap;
+      const loop = !!opts.loop;
+
+      const run = () => list.reduce((chain, key) => chain.then(() => new Promise((resolve) => {
+        if (this.destroyed || !this.keyPaths[key]) return resolve();
+        this.press(key);
+        if (isFn(opts.onStep)) opts.onStep(key, this);
+        setTimeout(() => {
+          this.release(key);
+          setTimeout(resolve, gap);
+        }, pressTime);
+      })), Promise.resolve()).then(() => {
+        if (loop && !this.destroyed) return run();
+      });
+
+      return run();
+    }
+
     /** 内部渲染：键盘高亮 + 手势图 + 指法标签 */
     _render(activeKey, meta) {
       // 1. 键盘高亮
@@ -520,10 +556,23 @@
         show['hand-neutral-left'] = true;
         show['hand-neutral-right'] = true;
       } else {
-        // showHandBoth：按下时保留双手自然状态作为背景
+        // 计算哪一侧手有按键手势（自然状态被按键手势替代）
+        let leftUsed = false;
+        let rightUsed = false;
+        held.forEach((k) => {
+          const side = (this.fingerMap[k] || '').charAt(0);
+          if (side === 'l') leftUsed = true;
+          else if (side === 'r') rightUsed = true;
+        });
+
+        // showHandBoth：true 保留双手自然状态作为背景；
+        // false 时同侧自然状态被按键手势替代（隐藏），对侧自然状态保留
         if (this.options.showHandBoth) {
           show['hand-neutral-left'] = true;
           show['hand-neutral-right'] = true;
+        } else {
+          if (!leftUsed) show['hand-neutral-left'] = true;
+          if (!rightUsed) show['hand-neutral-right'] = true;
         }
 
         // 修饰键组合（shift + alt）

@@ -16,6 +16,8 @@
 - 新建的文件需要在文件头注释功能说明。
 - 新建的方法需要在方法头注释功能说明。
 
+## 修改README.md
+涉及修改`README.md`文件时，需同步修改其他语言版本的README文件：README_ja.md — 日语、README_ko.md — 韩语、README_ru.md — 俄语、README_pt.md — 葡萄牙语、README_es.md — 西班牙语，如`README_zh.md`，并在同步翻译为对应语言为中文。
 
 ## 修复bug的流程
 把已修复的bug追加记录在fix.md里，格式如下：

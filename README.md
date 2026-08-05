@@ -7,7 +7,7 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
 **Repository**: [GitHub](https://github.com/ayuday/vkeyboardhand) · [Issues](https://github.com/ayuday/vkeyboardhand/issues) · [npm](https://www.npmjs.com/package/vkeyboardhand)
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/vkeyboardhand" alt="npm version">
+  <a href="https://www.npmjs.com/package/vkeyboardhand" target="_blank"><img src="https://img.shields.io/npm/v/vkeyboardhand" alt="npm version"></a>
   <img src="https://img.shields.io/npm/dm/vkeyboardhand" alt="npm downloads">
   <img src="https://data.jsdelivr.com/v1/package/npm/vkeyboardhand/badge" alt="jsDelivr CDN version">
   <img src="https://img.shields.io/github/stars/ayuday/vkeyboardhand" alt="GitHub stars">
@@ -15,7 +15,7 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
   <img src="https://img.shields.io/badge/pure_JS-zero_dependency-4fc08d" alt="pure JS zero dependency">
 </p>
 
-[English](README.md) | [简体中文](README_zh.md)
+[English](README.md) | [简体中文](README_zh.md) | [日本語](README_ja.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Português](README_pt.md) | [Español](README_es.md)
 
 <p align="center">
   <img src="./assets/vkeyboardhand.jpg" alt="vkeyboardhand"  />
@@ -33,7 +33,7 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
 - 🎨 Rainbow color scheme (default theme): keys are colored by finger zones, cold on the left and warm on the right to form a rainbow gradient (see `colorful.md` for the color conventions).
 - 🧩 Framework-agnostic: the component only manipulates the DOM, depends on no framework, and works directly in Vue / React / Angular.
 - 📦 Three import methods: local `<script>`, CDN, npm + ESM.
-- ⚙️ Full API: `press / release / reset / setTheme / setClickEnabled / getState / destroy` plus event callbacks.
+- ⚙️ Full API: `press / release / play / reset / setTheme / setClickEnabled / getState / destroy` plus event callbacks.
 - 🗂 Key mapping table (data layer): a three-layer `key → finger → SVG id` mapping that can be overridden via config.
 
 ## Tech Stack
@@ -185,7 +185,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | `showFingerLabel` | `boolean` | `true` | Show the finger-hint bar |
 | `showFingerColors` | `boolean` | `false` | Color keys by finger (on by default in the `colorful` theme, can be enabled manually in others) |
 | `showBanner` | `boolean` | `true` | Print a version + repository banner to the console after init |
-| `showHandBoth` | `boolean` | `true` | Keep both hands' natural resting state visible while a key is pressed (`true`: both neutral hands stay shown alongside the pressed gesture; `false`: pressing a left-hand key hides the right hand and vice versa) |
+| `showHandBoth` | `boolean` | `true` | How natural hands are shown while a key is held: `true` keeps both neutral hands visible as a background next to the pressed gesture; `false` replaces the same-side neutral hand with the key gesture (hidden) while the opposite-side neutral hand stays visible; both neutral hands return after release |
 | `holdDelay` | `number` | `80` | Hand-gesture transition delay (ms) |
 | `keyboardClass` | `string` | `'standard-kb'` | Extra class name for the keyboard SVG |
 | `keyMap` | `object` | `KEY_MAP` | Override the `KeyboardEvent.code → key` mapping |
@@ -202,6 +202,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | --- | --- |
 | `press(key, meta?)` | Press a specified key (`key` is the key name, e.g. `'q'`, `'shift-left'`) |
 | `release(key, meta?)` | Release a specified key |
+| `play(keys, options?)` | Play a sequence of keys (e.g. `kb.play('hello')`) with per-key hold time & gap, plus optional `loop` auto-repeat; returns a Promise |
 | `reset()` | Reset all highlights and gestures (back to both hands' natural resting position) |
 | `setTheme(theme)` | Switch theme |
 | `setClickEnabled(bool)` | Enable / disable click-to-demo |
@@ -335,14 +336,6 @@ npm version patch            # bump package.json + create tag v1.0.1
 git push origin main --tags  # pushes commit and tag: CI runs, then release.yml publishes to npm
 ```
 
-## Deploy to GitHub Pages
-
-`.github/workflows/deploy-gh-pages.yml` deploys `index.html` + `dist/` + `svg/` to GitHub Pages on every push to `main`, keeping the custom domain `https://vk.markdownlang.com` via the `CNAME` file.
-
-Required settings (one-time):
-
-1. **Settings → Environments → `github-pages` → Deployment branches**: set to **All branches** (or add `main`). If it still only allows `gh-pages`, the deploy job is rejected with *"Branch 'main' is not allowed to deploy to github-pages due to environment protection rules"*.
-2. **Settings → Pages → Source**: select **GitHub Actions** (not "Deploy from a branch"); confirm the custom domain `vk.markdownlang.com`.
 
 ## Browser Support
 
