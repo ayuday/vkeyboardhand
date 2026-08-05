@@ -2,7 +2,7 @@
    vkeyboardhand.css
    交互式指法教学组件样式：SVG 键盘图 + SVG 手势图联动
    ========================================================================== */
-.vk-hand{--vk-accent:#79bbff;--vk-finger-lp:#ff9f43;--vk-finger-lr:#f368e0;--vk-finger-lm:#17c0eb;--vk-finger-li:#1dd1a1;--vk-finger-ri:#0abde3;--vk-finger-rm:#a29bfe;--vk-finger-rr:#fd79a8;--vk-finger-rp:#fdcb6e;--vk-finger-th:#6c5ce7;position:relative;width:100%;max-width:685px;margin:0 auto;font-family:"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;user-select:none;-webkit-user-select:none;}
+.vk-hand{--vk-accent:#79bbff;--vk-finger-lp:#ff9f43;--vk-finger-lr:#f368e0;--vk-finger-lm:#17c0eb;--vk-finger-li:#1dd1a1;--vk-finger-ri:#0abde3;--vk-finger-rm:#a29bfe;--vk-finger-rr:#fd79a8;--vk-finger-rp:#fdcb6e;--vk-finger-th:#6c5ce7;position:relative;width:100%;max-width:685px;height:363px;margin:0 auto 120px;font-family:"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;user-select:none;-webkit-user-select:none;}
 .vk-hand *{box-sizing:border-box;}
 
 /* ------------------------- 键盘图 ------------------------- */
@@ -105,7 +105,7 @@
 
 /* ------------------------- 响应式 ------------------------- */
 @media screen and (max-width:479px){
-  .vk-hand{max-width:360px;}
+  .vk-hand{max-width:360px;height:195px;margin-bottom:100px;}
   .vk-hand-layer{height:195px;top:0;left:-31px;transform:translate(55px) scale(1.55);}
   .vk-finger-label{font-size:12px;padding:4px 10px;}
 }

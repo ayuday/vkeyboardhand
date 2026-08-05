@@ -4,6 +4,25 @@
 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## 2026-08-05
+
+### 功能新增
+
+- 演示页 `index.html` 新增 `#vk-demo-2` 实例：关闭键盘监听（`listenKeyboard: false`），渲染后固定演示按键 Y 的键盘高亮与正确手势（右手食指），并显式指定 `showHandBoth: false` 保证只显示右手手势、隐藏左手
+- `#vk-demo` 与 `#vk-demo-2` 下方均增加“代码用法（Code Usage）”代码块，展示组件初始化用法
+
+### 验证结果
+
+- 无头 Chrome 实测：`#vk-demo-2` 内 `letter-bg-y` 高亮、`hand-y` 显示、`hand-neutral-left` 隐藏、指法标签显示“右手食指 按 Y”
+- 模拟真实键盘 `KeyA`：`#vk-demo-2` 不响应（关闭键盘监听生效），Y 演示保持
+- 两个代码用法块渲染正常
+
+### 修改文件
+
+| 作用描述 | 文件名 | 修复前 | 修复后 |
+| --- | --- | --- | --- |
+| 新增固定演示实例与代码用法 | `index.html` | 仅 `#vk-demo` 一个实例，无代码用法展示 | 新增 `#vk-demo-2`（关闭键盘监听 + 固定演示 Y + `showHandBoth: false`）及两个代码用法块 |
+
 ## [1.0.2] - 2026-08-04
 
 ### 变更

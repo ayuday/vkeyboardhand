@@ -12,6 +12,11 @@
     .page-head h1 { margin: 0 0 6px; font-size: 26px; letter-spacing: 0.5px; }
     .page-head p { margin: 0; color: #6b7280; font-size: 14px; }
     .demo-card { width: 100%; max-width: 780px; background: #fff; border: 1px solid #e5e9f2; border-radius: 16px; box-shadow: 0 18px 50px rgba(31, 45, 77, 0.1); padding: 36px 28px 48px; }
+    .demo-card + .demo-card { margin-top: 24px; }
+    .demo-title { margin: 0 0 8px; font-size: 17px; text-align: center; }
+    .code-title { margin: 26px 0 8px; font-size: 14px; color: #6b7280; }
+    .code-block { background: #1e2430; color: #dbe4f0; border-radius: 10px; padding: 14px 16px; font-size: 12.5px; line-height: 1.65; overflow-x: auto; }
+    .code-block code { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; }
     .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; margin-bottom: 26px; }
     .toolbar button { border: 1px solid #d8dee9; background: #fff; color: #374151; border-radius: 999px; padding: 7px 16px; font-size: 13px; cursor: pointer; transition: all 0.18s ease; }
     .toolbar button:hover { border-color: #79bbff; color: #1d63c9; }
@@ -55,11 +60,46 @@
 
   <main class="demo-card">
 
+    <h2 class="demo-title">实例 1 · 键盘实时联动</h2>
     <div id="vk-demo"></div>
     <p class="hint">
       直接在键盘上打字即可联动 <kbd>Shift</kbd> <kbd>Alt</kbd> 等组合键
       · 也可用鼠标点击键位演示 · 顶部按钮切换主题
     </p>
+
+    <h3 class="code-title">代码用法（Code Usage）</h3>
+    <pre class="code-block"><code>&lt;div id="vk-demo"&gt;&lt;/div&gt;
+&lt;script&gt;
+  VKeyboardHand.create('#vk-demo', {
+    keyboard: './svg/keyboard.svg',
+    hand: './svg/hand.svg',
+    theme: 'colorful'
+  });
+&lt;/script&gt;</code></pre>
+  </main>
+
+  <main class="demo-card">
+
+    <h2 class="demo-title">实例 2 · 固定演示按键 Y（关闭键盘监听）</h2>
+    <div id="vk-demo-2"></div>
+    <p class="hint">
+      自动演示按键 <kbd>Y</kbd>：键盘高亮 + 正确手势（右手食指），不响应真实键盘输入
+    </p>
+
+    <h3 class="code-title">代码用法（Code Usage）</h3>
+    <pre class="code-block"><code>&lt;div id="vk-demo-2"&gt;&lt;/div&gt;
+&lt;script&gt;
+  VKeyboardHand.create('#vk-demo-2', {
+    keyboard: './svg/keyboard.svg',
+    hand: './svg/hand.svg',
+    listenKeyboard: false,  // 关闭键盘监听（键盘事件监听）
+    enableClick: false,     // 关闭点击演示，保持固定演示态
+    showHandBoth: false,    // 正确手势：只显示按 Y 的右手，隐藏左手
+    onReady: function (kb) {
+      kb.press('y');        // 演示按键 Y：键盘高亮 + 正确手势（右手食指）
+    }
+  });
+&lt;/script&gt;</code></pre>
   </main>
 
   <!-- 方式一：本地 / CDN 引入（UMD） -->
@@ -90,6 +130,20 @@
       },
       onKeyUp: function (info) {
         console.log('[vkeyboardhand] 松开', info);
+      }
+    });
+
+    // 实例 2：关闭键盘监听，渲染后自动演示按键 Y 的键盘状态与正确手势
+    var demo2 = VKeyboardHand.create('#vk-demo-2', {
+      keyboard: './svg/keyboard.svg',
+      hand: './svg/hand.svg',
+      theme: 'colorful',
+      listenKeyboard: false,   // 关闭键盘监听（键盘事件监听）
+      enableClick: false,      // 关闭点击演示，保持固定演示态
+      showHandBoth: false,     // 正确手势：只显示按 Y 的右手，隐藏左手
+      showFingerLabel: true,
+      onReady: function (kb) {
+        kb.press('y');         // 演示按键 Y：键盘高亮 + 正确手势（右手食指）
       }
     });
 

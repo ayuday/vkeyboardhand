@@ -1,4 +1,6 @@
-# vkeyboardhand · Interactive Virtual Keyboard Touch-Typing Teaching Component
+# ⌨️ vkeyboardhand
+
+Interactive Virtual Keyboard Touch-Typing Teaching Component
 
 An interactive virtual touch-typing teaching system powered by an **SVG keyboard + SVG hand-gesture diagram + JavaScript event-driven** integration. Pure HTML + JS, zero dependencies, compatible with **Vue / React / Angular** and other front-end frameworks, supporting **local import, CDN, and npm** usage.
 
@@ -9,7 +11,6 @@ An interactive virtual touch-typing teaching system powered by an **SVG keyboard
   <img src="https://img.shields.io/npm/dm/vkeyboardhand" alt="npm downloads">
   <img src="https://data.jsdelivr.com/v1/package/npm/vkeyboardhand/badge" alt="jsDelivr CDN version">
   <img src="https://img.shields.io/github/stars/ayuday/vkeyboardhand" alt="GitHub stars">
-  <img src="https://img.shields.io/github/issues/ayuday/vkeyboardhand" alt="GitHub issues">
   <img src="https://img.shields.io/npm/l/vkeyboardhand" alt="License MIT">
   <img src="https://img.shields.io/badge/pure_JS-zero_dependency-4fc08d" alt="pure JS zero dependency">
 </p>
