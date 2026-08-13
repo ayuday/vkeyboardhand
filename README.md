@@ -1,3 +1,5 @@
+
+
 # ⌨️ vkeyboardhand
 
 Interactive Virtual Keyboard Touch-Typing Teaching Component
@@ -202,7 +204,7 @@ export class FingerTeachingComponent implements AfterViewInit, OnDestroy {
 | --- | --- |
 | `press(key, meta?)` | Press a specified key (`key` is the key name, e.g. `'q'`, `'shift-left'`) |
 | `release(key, meta?)` | Release a specified key |
-| `play(keys, options?)` | Play a sequence of keys (e.g. `kb.play('hello')`) with per-key hold time & gap, plus optional `loop` auto-repeat; returns a Promise |
+| `play(keys, options?)` | Play a sequence of keys (e.g. `kb.play('hello')`) with per-key `pressTime` (default 500ms) & gap (default 150ms), optional `loop` auto-repeat, and `onStep` callback; returns a Promise |
 | `reset()` | Reset all highlights and gestures (back to both hands' natural resting position) |
 | `setTheme(theme)` | Switch theme |
 | `setClickEnabled(bool)` | Enable / disable click-to-demo |
@@ -319,7 +321,6 @@ pnpm preview    # local preview of index.html
 ├── index.html               # component demo page
 └── package.json
 ```
-
 
 
 
